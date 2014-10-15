@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="red_amp_max">160</integer>
+    <integer name="blue_amp_max">160</integer>
+    <integer name="magenta_amp_max">160</integer>
+    <integer name="yellow_amp_max">160</integer>
+</resources>
