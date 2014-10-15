@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <CheckBox
+        android:id="@+id/redMotionCircle"
+        style="@style/CircularCheckBox"
+        android:text="@string/red_mc" />
+
+    <CheckBox
+        style="@style/CircularCheckBox"
+        android:id="@+id/blueMotionCircle"
+        android:text="@string/blue_mc"  />
+
+    <CheckBox
+        style="@style/CircularCheckBox"
+        android:id="@+id/magentaMotionCircle"
+        android:text="@string/magenta_mc"  />
+
+    <CheckBox
+        style="@style/CircularCheckBox"
+        android:id="@+id/yellowMotionCircle"
+        android:text="@string/yellow_mc" />
+    
+    
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+       <TableRow
+            android:id="@+id/tableRowRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+           <TextView
+            style="@style/SeekBarTV"
+            android:text="@string/tvRedAmpTxt" />
+
+     		<SeekBar
+     		    android:id="@+id/sbRedCircleAmp"
+     		    style="@style/AmpSeekBar"
+     		    android:max="@integer/red_amp_max" />
+     	
+     		<TextView
+     	    android:id="@+id/tvRedAmpProgressStatus"
+            style="@style/SeekBarTV"
+            android:text="Red" />
+     	
+        </TableRow>
+        
+       <TableRow
+            android:id="@+id/tableRowBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+     		
+           <TextView
+            style="@style/SeekBarTV"
+            android:text="@string/tvBlueAmpTxt" />
+
+     	 <SeekBar
+     	     android:id="@+id/sbBlueCircleAmp"
+     	     style="@style/AmpSeekBar"
+     	     android:max="@integer/blue_amp_max" />
+     	 
+     	 <TextView
+     	    android:id="@+id/tvBlueAmpProgressStatus"
+            style="@style/SeekBarTV"
+            android:text="Blue" />
+     	 
+        </TableRow>
+        
+       <TableRow
+            android:id="@+id/tableRowMagenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+     	 
+           <TextView
+            style="@style/SeekBarTV"
+            android:text="@string/tvMagentaAmpTxt" />
+
+     	 <SeekBar
+     	     android:id="@+id/sbMagentaCircleAmp"
+     	     style="@style/AmpSeekBar"
+     	     android:max="@integer/magenta_amp_max" />
+     	 
+     	 <TextView
+     	    android:id="@+id/tvMagentaAmpProgressStatus"
+            style="@style/SeekBarTV"
+            android:text="Magenta" />
+           
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowYellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+		<TextView
+			style="@style/SeekBarTV"
+            android:text="@string/tvYellowAmpTxt" />
+
+     	<SeekBar
+     	    android:id="@+id/sbYellowCircleAmp"
+     	    style="@style/AmpSeekBar"
+     	    android:max="@integer/yellow_amp_max" />
+     	
+     	<TextView
+     	    android:id="@+id/tvYellowAmpProgressStatus"
+            style="@style/SeekBarTV"
+            android:text="Yellow" />
+
+        </TableRow>
+
+
+
+
+    </TableLayout>
+    
+    
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm" />
+
+    
+</LinearLayout>
