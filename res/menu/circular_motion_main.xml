@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.vkedco.mobapp.circular_motion.CircularMotionMainActivity" >
+
+    <!--  
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never"/>
+    -->
+    
+    <item
+        android:id="@+id/action_tuneup"
+        android:orderInCategory="100"
+        android:title="@string/motion_circle_tuneup"
+        app:showAsAction="never"/>
+
+</menu>
